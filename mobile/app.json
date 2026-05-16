@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "MedCore",
+    "slug": "medcore",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "medcore",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#034A7E"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#034A7E"
+      },
+      "package": "com.mohamed_ellaban.medcore"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-sharing",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "نحتاج إلى صلاحية الكاميرا لمسح رموز QR والتقاط صور المستندات الطبية.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "نحتاج إلى صلاحية الوصول إلى الصور لرفع المستندات الطبية.",
+          "cameraPermission": "نحتاج إلى صلاحية الكاميرا لالتقاط صور المستندات الطبية."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e0cbbf40-7c00-4fc6-9fc9-a98285485c85"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e0cbbf40-7c00-4fc6-9fc9-a98285485c85"
+    }
+  }
+}
